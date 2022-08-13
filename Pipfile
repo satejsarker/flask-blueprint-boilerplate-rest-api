@@ -6,8 +6,12 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-restful = "*"
+click = "*"
+waitress = "*"
+paste = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.9"
