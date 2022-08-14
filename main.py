@@ -1,7 +1,5 @@
-from pip import main
+from waitress_server import waitress_server
 
+from deploy import simple_api
 
-from app import create_app
-if __name__ == '__main__':
-    create_app().run()
-    
+api = simple_api
