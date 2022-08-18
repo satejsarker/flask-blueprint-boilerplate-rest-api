@@ -50,7 +50,7 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['*.pyc', 'test']),
     entry_points={
         "console_scripts": [
-            "simple-api=main:api",
+            "simple-api=src:api",
         ],
     },
     install_requires=get_install_requirements(),

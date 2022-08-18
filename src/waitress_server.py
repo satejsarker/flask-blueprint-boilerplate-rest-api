@@ -4,8 +4,7 @@ import waitress
 from paste.translogger import TransLogger
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-import app
-import deploy
+from . import app, deploy
 
 
 def waitress_server(port=5001, *, host='0.0.0.0'):

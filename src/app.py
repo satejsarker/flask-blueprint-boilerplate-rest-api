@@ -4,7 +4,8 @@
 import flask
 import flask_restful
 
-from simple_api.hello_api import Hello_BP
+from .config import Config
+from .simple_api.hello_api import Hello_BP
 
 
 def create_app() -> flask.Flask:
@@ -15,7 +16,7 @@ def create_app() -> flask.Flask:
     """
 
     app = flask.Flask(__name__)
-    app.config.from_object("config.Config")
+    app.config.from_object(Config)
     url_prefix = "/hello"
     app.register_blueprint(Hello_BP, url_prefix=url_prefix)
 
