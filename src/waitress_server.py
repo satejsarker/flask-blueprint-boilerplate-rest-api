@@ -32,7 +32,7 @@ def waitress_server(port=5001, *, host='0.0.0.0'):
     default=5001,
 )
 def _waitress(port):
-    """A waitress entry point to the m2a-tv2-api module."""
+    """A waitress entry point to the flask simple api"""
     waitress_server(port)
 
 

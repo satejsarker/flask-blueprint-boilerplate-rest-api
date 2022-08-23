@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  flask_api:
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - './dist:/app'
+    network_mode: 'bridge'
+    stdin_open: true
+    tty: true
